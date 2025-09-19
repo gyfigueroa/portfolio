@@ -54,18 +54,6 @@ body{
     "wdth" 100;
 }
 
-/* .project-title {
-    font-weight: 800;
-    font-size: 18pt;
-    line-height: 100%;
-}
-
-.project-caption {
-    font-weight: 600;
-    font-size: 10pt;
-    text-transform: uppercase;
-    opacity: 50%;
-} */
 
 #logo {
     width: 100%;
@@ -122,12 +110,7 @@ body{
     align-items: center;
 }
 
-.column:nth-of-type(1){
-    padding-top: 30px;
-}
-.column:nth-of-type(3){
-    padding-top: 60px;
-}
+
 
 .polaroid{
     background-color: rgba(208, 212, 193, 1);
@@ -227,5 +210,18 @@ body{
 
   .selected-works{
     flex-direction: row;
+  }
+
+
+
+  .column:nth-of-type(1){
+    padding-top: 30px;
+  }
+  .column:nth-of-type(3){
+    padding-top: 60px;
+  }
+
+  .selected-works, .column{
+    gap: 30px;
   }
 }
