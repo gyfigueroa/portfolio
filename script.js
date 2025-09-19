@@ -6,9 +6,7 @@
 
     let developers = document.querySelectorAll('.developer');
 
-    let footer = document.querySelector(".footer");
-
-
+    //developers for home page
     developers.forEach(developer => {
         var tl = gsap.timeline({
             scrollTrigger:{
@@ -21,45 +19,5 @@
         })
     })
 
-    ScrollTrigger.create({
-        trigger: ".project-info",
-        start: "top-=30px bottom",
-        end: "100%+=30px bottom",
-        pinSpacing: false,
-        pin: ".project-landing",
-        id: "project-info",
-        markers: true
-    })
 
-    ScrollTrigger.create({
-        trigger: ".project-title",
-        start: "bottom bottom",
-        end: ScrollTrigger.maxScroll(window),
-        toggleClass: {
-            targets: ".project-hero",
-            className: "hidden"
-        },
-        markers: false
-    })
-
-    /* gsap.to(".footer", {
-        scrollTrigger: {
-            trigger: ".footer",
-            start: "top bottom",
-            end: "bottom bottom",
-            pinSpacing: false,
-            pin: ".selected-works",
-            id: "footer",
-            markers: false
-        }
-    }) */
-
-
-
-    /* ScrollTrigger.create({
-        trigger: ".developer",
-        start: "top 80%",
-        toggleClass: "active",
-        markers: true
-    }) */
 })();
