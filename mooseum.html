@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moo-vin' Moo-vin</title>
+
+    <link rel="stylesheet" href="projects.css"> <!-- General Projects Styling -->
+    <link rel="stylesheet" href="mooseum.css"> <!-- Page Specific Styling -->
+    <link rel="stylesheet" href="styles.css"> <!-- Site-wide Styling (Type, Footers, Etc.) -->
+
+    <!-- FONT AWESOME INITIALIZATION -->
+    <script src="https://kit.fontawesome.com/7f72942958.js" crossorigin="anonymous"></script>
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Aguafina+Script&family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Spline+Sans:wght@300..700&family=Yesteryear&display=swap" rel="stylesheet">
+
+    <!-- GSAP -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <svg style="display:none;">
+        <filter id="displacementFilter">
+            <feImage href="/images/displacement.png" preserveAspectRatio="none" />
+            <feDisplacementMap in="SourceGraphic" scale="300" xChannelSelector="R" yChannelSelector="G" />
+        </filter>
+    </svg>
+
+    <div class="parallaxContainer">
+        <div class="staticBG"></div>
+
+    
+
+    <!-- STICKY HEADER -->
+    <a href="index.html">
+        <div class="menu button">
+            <img src="images/gabrielfigueroalogo-green.svg" alt="">
+        </div>
+    </a>
+    
+    <div class="project-landing ">
+        <!-- 
+        <img src="images/mooseum/67f2f56286b62a2ae012baae_P1088585.avif" alt="" class="project-hero"> -->
+        <div class="project-hero" style="background-image: url(images/mooseum/67f2f56286b62a2ae012baae_P1088585.avif);"></div>
+        
+        
+        
+        <div class="emoji glass-smaller">
+            <i class="fa-solid fa-arrow-up" style="color: #ffffff;"></i>
+        </div>
+        
+    </div>
+
+
+    <div class="glass project-info">
+            <div>
+                <div class="title-container">
+                    <p class="label">Mass Transit</p>
+                    <p class="project-title">Unitrans Moo-vin’  Moo-seum</p>
+                </div>
+                
+                <div class="credit-container">
+                    <p><span class="label">Project Manager</span> Gabriel Figueroa</p>
+                    <p><span class="label">Lead Designer</span> Joyce Pau</p>
+                    <p><span class="label">Photography</span> Aggie Studios</p>
+                </div>
+                
+            </div>
+            <div>
+                <p>The Moovin' Mooseum is the newest public art program highlighting both Aggie Arts and Unitrans' commitment to sustainability and connecting its community. With its student-led curation team, the Mooseum swapped its interior ad carts for drawings and creations of local artists. I led the creative direction of a full exterior wrap that captured the unique Davis community and showcases the many resources ASUCD, Unitrans' parent organization, has to offer students. My team and I aimed to create a vibrant, playful twist on the classic red Unitrans bus that reflects the friendly and inviting nature of the campus community. The logos and icons “sticker-ed” onto the bus are connected by a dotted line mirroring ASUCD's motto: “Connecting the dots”.</p>
+
+                <p>Featured in <a href="" class="link">The California Aggie</a>.</p>
+            </div>
+    </div>
+
+
+    <div class="gallery">
+        <img src="images/mooseum/67f2f99110db00cd6a8696c8_P1088636.avif" alt="" class="gallery-img">
+
+        <img src="images/mooseum/67f2f990bac782558b866ec9_P1088632.avif" alt="" class="gallery-img">
+        
+        <img src="images/mooseum/67f2f9916b03453b3a49a3c8_P1088607.avif" alt="" class="gallery-img">
+        <div class="gallery-filler glass"></div>
+        <div class="gallery-filler glass"></div>
+        <div class="gallery-filler glass"></div>
+    </div>
+
+    </div>
+
+    <div class="footer">
+        <p class="label">Like what you see?</p>
+        <p class="landing-script">Let's Connect!</p>
+        <div class="buttons">
+            <div class="button" style="position: relative;">
+                <i class="fa-brands fa-linkedin fa-xl" style="color: #95FF00;"></i>
+            </div>
+            <div class="button" style="position: relative;">
+                <i class="fa-solid fa-envelope fa-xl" style="color: #95FF00;"></i>
+            </div>
+            <div class="button">
+                <i class="fa-solid fa-file-lines fa-xl" style="color: #95FF00;"></i>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

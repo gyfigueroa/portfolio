@@ -1,0 +1,50 @@
+.gallery{
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+    "A A A x"
+    "y B B B"
+    "y C C z";
+}
+
+
+.gallery-img:nth-of-type(1){
+    grid-area: A;
+}
+
+.gallery-img:nth-of-type(2){
+    grid-area: B;
+}
+
+.gallery-img:nth-of-type(3){
+    grid-area: C;
+}
+
+.gallery-filler-2:nth-of-type(1){
+    top: 10%;
+    left: 10%;
+}
+
+.gallery-filler:nth-of-type(1){
+    grid-area: x;
+}
+
+.gallery-filler:nth-of-type(2){
+    grid-area: y;
+}
+
+.gallery-filler:nth-of-type(3){
+    grid-area: z;
+}
+
+
+.project-hero {
+    background-image: url(images/mhi/mhi-hero-image-3.svg);
+}
+
+
+@media (min-width: 750px) {
+  /* … */
+    .project-hero {
+        background-image: url(images/mhi/mhi-hero-image.svg);
+    }
+}

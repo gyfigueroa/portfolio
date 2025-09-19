@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mental Health Initiative</title>
+
+    <link rel="stylesheet" href="projects.css"> <!-- General Projects Styling -->
+    <link rel="stylesheet" href="project.css"> <!-- UPDATE THIS Page Specific Styling -->
+    <link rel="stylesheet" href="styles.css"> <!-- Site-wide Styling (Type, Footers, Menu, Etc.) -->
+
+    <!-- FONT AWESOME INITIALIZATION -->
+    <script src="https://kit.fontawesome.com/7f72942958.js" crossorigin="anonymous"></script>
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Aguafina+Script&family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Spline+Sans:wght@300..700&family=Yesteryear&display=swap" rel="stylesheet">
+
+    <!-- GSAP -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <!-- IGNORE: SVG filter for liquid glass -->
+    <svg style="display:none;">
+        <filter id="displacementFilter">
+            <feImage href="/images/displacement.png" preserveAspectRatio="none" />
+            <feDisplacementMap in="SourceGraphic" scale="300" xChannelSelector="R" yChannelSelector="G" />
+        </filter>
+    </svg>
+
+    <!-- STICKY HEADER -->
+    <a href="index.html">
+        <div class="menu button">
+            <img src="images/gabrielfigueroalogo-green.svg" alt="">
+        </div>
+    </a>
+
+    <div class="parallaxContainer">
+        <div class="staticBG"></div> <!-- glass for gallery -->
+        
+        <!-- *******
+        STEP ONE: ADD HERO IMAGE
+        ******* -->
+        <div class="project-landing ">
+            <!-- Adjust hero image in respective css file -->
+            <div class="project-hero"></div>
+            
+            
+            <div class="emoji glass-smaller">
+                <i class="fa-solid fa-arrow-up" style="color: #ffffff;"></i>
+            </div>
+            
+        </div>
+
+        <!-- *******
+        STEP TWO: ADD PROJECT INFO
+        ******* -->
+        <div class="glass project-info">
+                <div>
+                    <div class="title-container">
+                        <p class="label">Merchandise, Social Media Campaign</p>
+                        <p class="project-title">MHI Conference</p>
+                    </div>
+                    
+                    <div class="credit-container">
+                        <p><span class="label">Project Manager</span> Gabriel Figueroa</p>
+                        <p><span class="label">Lead Designer</span> Joyce Pau</p>
+                    </div>
+                    
+                </div>
+                <div>
+                    <p>The theme for Mental Health Initiative’s 2025 Mental Health Conference is “Bloom As You Are”. A flower going through many stages like being planted, budding, and blooming to reach its true self is a philosophy the Mental Health Initiative wanted to spotlight with this year’s theme.</p>
+
+                    <p>I led the creative direction for the flower-studded, “groovy” identity we went with for all the deliverables on this project including a T-shirt, tote bag, social media posts, and an event brochure to guide attendees through the whole day.</p>
+                </div>
+        </div>
+
+        <!-- *******
+        STEP THREE: SWAP OUT IMAGES AND REORDER GRID IN RESPECTIVE .css FILE
+        ******* --> 
+        <div class="gallery">
+            <img src="images/mhi/MHI_Tshirt_Mockup_2.avif" alt="" class="gallery-img">
+            <img src="images/mhi/MHI_Tote_Mockup.avif" alt="" class="gallery-img">
+            <img src="images/mhi/MHI_Stickers_Mockup_2 Large.avif" alt="" class="gallery-img">
+
+            <div class="gallery-filler glass" id="filler1"></div>
+        </div>
+
+
+    </div>
+
+    <div class="footer">
+        <p class="label">Like what you see?</p>
+        <p class="landing-script">Let's Connect!</p>
+        <div class="buttons">
+            <div class="button" style="position: relative;">
+                <i class="fa-brands fa-linkedin fa-xl" style="color: #95FF00;"></i>
+            </div>
+            <div class="button" style="position: relative;">
+                <i class="fa-solid fa-envelope fa-xl" style="color: #95FF00;"></i>
+            </div>
+            <div class="button">
+                <i class="fa-solid fa-file-lines fa-xl" style="color: #95FF00;"></i>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

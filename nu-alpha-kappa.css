@@ -1,0 +1,98 @@
+.gallery{
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+    "A A B B C C"
+    "D D E E F F"
+    "G G G H H .";
+
+    grid-template-areas:
+    "A A A A B B"
+    "A A A A B B"
+    "A A A A C C"
+    "A A A A C C"
+    "A A A A D D"
+    "E E F F D D"
+    "E E F F D D"
+    "G G H H I I"
+    "G G H H I I"
+    "J J K K I I"
+    "J J K K L L"
+    "J J K K L L"
+    "M M N N L L"
+    "M M N N . ."
+    "M M N N . .";
+}
+
+.gallery-img{
+    border-radius: 20px;
+}
+
+
+#item-a{
+    grid-area: A;
+}
+
+#item-b{
+    grid-area: B;
+}
+
+#item-c{
+    grid-area: C;
+}
+
+#item-d{
+    grid-area: D;
+}
+
+#item-e{
+    grid-area: E;
+}
+
+#item-f{
+    grid-area: F;
+}
+
+#item-g{
+    grid-area: G;
+}
+
+#item-h{
+    grid-area: H;
+}
+
+#item-i{
+    grid-area: I;
+}
+
+#item-j{
+    grid-area: J;
+}
+
+#item-k{
+    grid-area: K;
+}
+
+#item-l{
+    grid-area: L;
+}
+
+#item-m{
+    grid-area: M;
+}
+
+#item-n{
+    grid-area: N;
+}
+
+
+.project-hero {
+    background-image: url(images/nak/NAK-hero.svg);
+}
+
+
+@media (min-width: 750px) {
+  /* … */
+    .project-hero {
+        background-image: url(images/nak/NAK-hero.svg);
+    }
+}

@@ -1,0 +1,58 @@
+.gallery{
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+    "A A A A B B"
+    "C C C C C C"
+    "D D D D x x"
+    "y y y E E E"
+    "F F F F F F";
+}
+
+
+.gallery-img:nth-of-type(1){
+    grid-area: A;
+}
+
+.gallery-img:nth-of-type(2){
+    grid-area: B;
+}
+
+.gallery-img:nth-of-type(3){
+    grid-area: C;
+}
+
+.gallery-img:nth-of-type(4){
+    grid-area: D;
+}
+
+.gallery-img:nth-of-type(5){
+    grid-area: E;
+}
+
+.gallery-img:nth-of-type(6){
+    grid-area: F;
+}
+#filler1{
+    grid-area: x;
+}
+
+#filler2{
+    grid-area: y;
+}
+
+#filler3{
+    grid-area: a;
+}
+
+
+.project-hero {
+    background-image: url(images/elections/Stickers.avif);
+}
+
+
+@media (min-width: 750px) {
+  /* … */
+    .project-hero {
+        background-image: url(images/elections/Stickers.avif);
+    }
+}

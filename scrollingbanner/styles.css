@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+}
+.carousel {
+    width: 120vw;
+    margin: 20px 0;
+    overflow: hidden;
+    display: flex;
+    background: #240000;
+    transform: rotate(-2deg);
+    position: absolute;
+    left: -10%;
+    /* z-index: 1; */
+    top: 10%;
+    
+}
+
+.card {
+    color: #FD7608;
+    padding: 20px 5px 10px;
+    
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* font-size: 40pt;
+    font-family: "Yesteryear", cursive; */
+}
+
+.group{
+    display: flex;
+    will-change: transform; /* We should be nice to the browser - let it know what we're going to animate. */
+    animation: scrolling 10s linear infinite;
+}
+
+@keyframes scrolling {
+    0% {
+    transform: translateX(0);
+    }
+    100% {
+    transform: translateX(-100%);
+    }
+}
+    

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Picture Animator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="avatarcont">
+        <div class="profilepic">
+
+            <img src="images/GabrielCropped.jpg" alt="Gabriel Figueroa" height="100%" width="100%">
+            
+            <div class="emoji avocado"><p>🥑</p></div>
+            <div class="emoji film"><p>🎞️</p></div>
+            <div class="emoji mexico"><p>🇲🇽</p></div>
+            <div class="emoji egg"><p>🍳</p></div>
+            <div class="emoji books"><p>🫟</p></div>
+            <div class="emoji flower"><p>🌷</p></div>
+            <div class="emoji bulb"><p>💡</p></div>
+            <div class="emoji music"><p>🎧</p></div>
+            <div class="emoji hike"><p>🥾</p></div>
+            <div class="emoji heart"><p>❤️‍🔥</p></div>
+            <div class="emoji computer"><p>👨‍💻</p></div>
+        </div>
+    </div>
+
+    <script>
+        let hoverElement = document.querySelector(".profilepic");
+        let emojis = document.querySelectorAll(".emoji");
+
+        function sleep(ms) {
+            return new Promise(resolve => setTimeout(resolve, ms));
+        }
+
+        console.log(hoverElement, emojis);
+
+        async function showHide(){
+            console.log("event triggered");
+            hoverElement.classList.add("active");
+
+            for (let i = 0; i < emojis.length; i++){
+                if (emojis[i].classList[2] === "show"){
+                    emojis[i].classList.remove("show");
+                    emojis[i].classList.add("hide");
+                    //console.log(emojis[i]);
+                    console.log(`emoji ${i}: show -> hide`);
+                } else {
+                    emojis[i].classList.remove("hide");
+                    emojis[i].classList.add("show");
+                    console.log(`emoji ${i}: hide -> show`);
+                }
+
+                await sleep(100);
+                console.log('slept for 100ms')
+                
+            }
+        }
+
+        setTimeout(showHide, 1000);
+        //hoverElement.addEventListener("mouseenter", showHide);
+        //hoverElement.addEventListener("mouseleave", showHide);
+
+
+    </script>
+    
+</body>
+</html>

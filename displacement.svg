@@ -1,0 +1,34 @@
+<!-- /assets/filters/displacement.svg -->
+<svg xmlns="http://www.w3.org/2000/svg">
+  <filter id="displacementFilter" x="0%" y="0%" width="100%" height="100%">
+    <!-- The displacement image -->
+    <feImage
+      href="/images/displacement.png"
+      preserveAspectRatio="none"
+      x="0" y="0" width="100%" height="100%"
+      result="map" />
+    <!-- Use the image as the displacement source -->
+    <feDisplacementMap
+      in="SourceGraphic"
+      in2="map"
+      scale="200"
+      xChannelSelector="R"
+      yChannelSelector="G" />
+  </filter>
+
+  <filter id="displacementFilterCircular" x="0%" y="0%" width="100%" height="100%">
+    <!-- The displacement image -->
+    <feImage
+      href="/images/displacement-circular.png"
+      preserveAspectRatio="none"
+      x="0" y="0" width="100%" height="100%"
+      result="map" />
+    <!-- Use the image as the displacement source -->
+    <feDisplacementMap
+      in="SourceGraphic"
+      in2="map"
+      scale="200"
+      xChannelSelector="R"
+      yChannelSelector="G" />
+  </filter>
+</svg>

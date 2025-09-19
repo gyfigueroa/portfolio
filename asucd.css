@@ -1,0 +1,151 @@
+.gallery{
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+    "A A A A A A    . B B B B ."
+    "C C C C D D    D D M M M M"
+    "F F F F F .    . . . Q Q Q"
+    "F F F F F E    E E E Q Q Q"
+    ". . . . . E    E E E . . ."
+    "G G G G H H    H H N N N N"
+    "O O O . . .    I I I I I I"
+    "O O O P P P    I I I I I I"
+    ". . . P P P    . . R R R ."
+    ". . J J J J    J J R R R ."
+    ". . J J J J    J J R R R ."
+    "K K K K K K    . . L L L L";
+    position: relative;
+    
+}
+
+.gallery-img{
+    position: relative;
+    border-radius: 10PX;
+}
+
+.sticker{
+    position: absolute;
+    height: 5%;
+    width: auto;
+    transition: all 0.5s;
+    filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.5));
+}
+
+#holo-sticker{
+    right: 5%;
+    top: 10%;
+    rotate: 20deg;
+}
+
+#ghibli-sticker{
+    left: 25%;
+    top: 35%;
+    rotate: -5deg;
+}
+
+#bike-sticker{
+    left: 10%;
+    top: 70%;
+    rotate: 5deg;
+}
+
+.sticker:hover{
+    transform: scale(1.2) rotate(-10deg);
+    filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.5));
+}
+
+
+.gallery-img:nth-of-type(1){
+    grid-area: A;
+}
+
+.gallery-img:nth-of-type(2){
+    grid-area: B;
+}
+
+.gallery-img:nth-of-type(3){
+    grid-area: C;
+}
+
+.gallery-img:nth-of-type(4){
+    grid-area: D;
+}
+
+.gallery-img:nth-of-type(5){
+    grid-area: E;
+}
+
+.gallery-img:nth-of-type(6){
+    grid-area: F;
+}
+
+.gallery-img:nth-of-type(7){
+    grid-area: G;
+}
+
+.gallery-img:nth-of-type(8){
+    grid-area: H;
+}
+
+.gallery-img:nth-of-type(9){
+    grid-area: I;
+}
+
+.gallery-img:nth-of-type(10){
+    grid-area: J;
+}
+
+.gallery-img:nth-of-type(11){
+    grid-area: K;
+}
+
+.gallery-img:nth-of-type(12){
+    grid-area: L;
+}
+
+.gallery-img:nth-of-type(13){
+    grid-area: M;
+}
+
+.gallery-img:nth-of-type(14){
+    grid-area: N;
+}
+
+.gallery-img:nth-of-type(15){
+    grid-area: O;
+}
+
+.gallery-img:nth-of-type(16){
+    grid-area: P;
+}
+
+.gallery-img:nth-of-type(17){
+    grid-area: Q;
+}
+.gallery-img:nth-of-type(18){
+    grid-area: R;
+}
+
+#filler1{
+    grid-area: x;
+}
+
+#filler2{
+    grid-area: y;
+}
+
+#filler3{
+    grid-area: a;
+}
+
+
+.project-hero {
+    background-image: url(images/mhi/mhi-hero-image-3.svg);
+}
+
+
+@media (min-width: 750px) {
+  /* … */
+    .project-hero {
+        background-image: url(images/mhi/mhi-hero-image.svg);
+    }
+}

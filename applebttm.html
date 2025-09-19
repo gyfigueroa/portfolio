@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Applebttm - Gabriel Figueroa</title>
+
+    <link rel="stylesheet" href="projects.css"> <!-- General Projects Styling -->
+    <link rel="stylesheet" href="applebttm.css"> <!-- UPDATE THIS Page Specific Styling -->
+    <link rel="stylesheet" href="styles.css"> <!-- Site-wide Styling (Type, Footers, Menu, Etc.) -->
+
+    <!-- FONT AWESOME INITIALIZATION -->
+    <script src="https://kit.fontawesome.com/7f72942958.js" crossorigin="anonymous"></script>
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Aguafina+Script&family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Spline+Sans:wght@300..700&family=Yesteryear&display=swap" rel="stylesheet">
+
+    <!-- GSAP -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <!-- IGNORE: SVG filter for liquid glass -->
+    <svg style="display:none;">
+        <filter id="displacementFilter">
+            <feImage href="/images/displacement.png" preserveAspectRatio="none" />
+            <feDisplacementMap in="SourceGraphic" scale="300" xChannelSelector="R" yChannelSelector="G" />
+        </filter>
+    </svg>
+
+    <!-- STICKY HEADER -->
+    <a href="index.html">
+        <div class="menu button">
+            <img src="images/gabrielfigueroalogo-green.svg" alt="">
+        </div>
+    </a>
+
+    <div class="parallaxContainer">
+        <div class="staticBG"></div> <!-- glass for gallery -->
+        
+        <!-- *******
+        STEP ONE: ADD HERO IMAGE
+        ******* -->
+        <div class="project-landing ">
+            <!-- Adjust hero image in respective css file -->
+            <div class="project-hero" style="background-image: url(images/applebttm/header.webp);"></div>
+            
+            
+            <div class="emoji glass-smaller">
+                <i class="fa-solid fa-arrow-up" style="color: #ffffff;"></i>
+            </div>
+            
+        </div>
+
+        <!-- *******
+        STEP TWO: ADD PROJECT INFO
+        ******* -->
+        <div class="glass project-info">
+                <div>
+                    <div class="title-container">
+                        <p class="label">UI/UX Case Study</p>
+                        <p class="project-title">Applebttm</p>
+                    </div>
+                    
+                    <div class="credit-container">
+                        <p><span class="label">DES 112</span> Gabriel Figueroa</p>
+                    </div>
+                    
+                </div>
+                <div>
+                    <p>Applebttm is a music review and discovery platform inspired by Goodreads and Letterboxd, designed to let users share opinions, rate albums, and uncover new artists. Built around intuitive navigation and streamlined onboarding, the app balances social engagement with simplicity to reduce cognitive overload.</p>
+                </div>
+        </div>
+
+        <!-- *******
+        STEP THREE: SWAP OUT IMAGES AND REORDER GRID IN RESPECTIVE .css FILE
+        ******* --> 
+        <div class="gallery">
+            <div class="article-container">
+                <article>
+                    <h1>Overview</h1>
+                    <p>Applebttm is a music review and discovery platform designed to fill a gap in the digital landscape: while Goodreads (books) and Letterboxd (films) exist, there has been no equivalent for music. Applebttm enables users to rate albums, write reviews, make lists, and discover new artists through a socially engaging, intuitive interface. This project was developed as a project for DES 112 at UC Davis, where I led UX research, prototyping, and usability testing.</p>
+                </article>
+                <div class="article-chunk2">
+                    <img src="images/applebttm/mockup1.webp" alt="" class="article-img">
+                    <a href="">
+                        <div class="button icon">
+                            <p>View full prototype</p>
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </div>
+                    </a>
+                </div>
+                <article>
+
+                    <h1>The Problem</h1>
+                    <p>Despite music being a central part of culture, there is no dedicated platform where users can review albums and share opinions in the same way readers and film fans do. Existing review apps for other media often overwhelm users with cluttered feeds, frontloaded onboarding, or poorly designed activity tabs. The challenge was to create a platform that preserves the social joy of discovery while reducing cognitive overload.</p>
+
+                    <h1>Research & Insights</h1>
+                    <p>I began by analyzing the strengths and weaknesses of apps like Goodreads and Letterboxd. Focus groups revealed that users appreciated the social aspects (ranking, reviews, activity feeds), but disliked being shown every action from friends and wanted smarter ways to discover new content.</p>
+                    <h2>Key insights</h2>
+                    <div class="mini-grid">
+                        <div class="mini-grid-row">
+                            <div class="mini-grid-item">
+                                <h2>Strengths</h2>
+                                <p>Social ranking, list-making, community interaction.</p>
+                            </div>
+                            <div class="mini-grid-item">
+                                <h2>Weakness</h2>
+                                <p>Overload of information, confusing navigation, limited personalization.</p>
+                            </div>
+                        </div>
+                        <div class="mini-grid-row">
+                            <div class="mini-grid-item">
+                                <h2>Opportunities</h2>
+                                <p>Spotlight rising artists, enable curated feeds, design for shareable moments.</p>
+                            </div>
+                            <div class="mini-grid-item">
+                                <h2>Threats</h2>
+                                <p>Risk of being too similar to competitors or devolving into spam.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <p>These insights shaped the foundation of Applebttm.</p>
+
+                    <h1>Design Goals</h1>
+                    <ul>
+                        <li>Reduce onboarding friction and cognitive overload.</li>
+                        <li>Provide intuitive navigation through clear iconography and simple flows.</li>
+                        <li>Spotlight new and upcoming artists to encourage music discovery.</li>
+                    </ul>
+
+                    <h1>The Solution</h1>
+                    <p>The final prototype is structured around four core tabs:</p>
+                    <ol>
+                        <li><b>Profile</b>: Users see all their reviews chronologically and access their lists.</li>
+                        <li><b>Create</b>: A simple flow for rating albums and posting reviews.</li>
+                        <li><b>Activity</b>: A curated feed of friends’ activity designed to reduce clutter.</li>
+                        <li><b>Discover</b>: A hub highlighting trending albums, top reviews, and up-and-coming artists.</li>
+                    </ol>
+                    <p>These design choices emphasized clarity and usability while keeping the social discovery aspect fun.</p>
+                </article>
+
+                <div class="article-chunk2">
+                    <img src="images/applebttm/mockup2.webp" alt="" class="article-img">
+                    <a href="">
+                        <div class="button icon">
+                            <p>View full prototype</p>
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </div>
+                    </a>
+                </div>
+
+                <article>
+                    <h1>Usability Testing</h1>
+                    <p>I conducted usability tests with five participants including a mix of peers and non-designers. Key findings included:</p>
+                    <div class="mini-grid">
+                        <div class="mini-grid-row">
+                            <div class="mini-grid-item">
+                                <h2>Onboarding</h2>
+                                <p>Users wanted more control → added back/skip options.</p>
+                            </div>
+                            <div class="mini-grid-item">
+                                <h2>Activity Feed</h2>
+                                <p>Lightning-bolt nav bar icon was unclear and the feed was overwhelming → replaced icon, simplified layout, increased text legibility.</p>
+                            </div>
+                            <div class="mini-grid-item">
+                                <h2>Rating Albums</h2>
+                                <p>Users weren’t sure how to start reviews → clarified icons, added text input, improved flow.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <p>These refinements made the app more approachable and user-friendly.</p>
+
+                    <h1>Impact & Takeaways</h1>
+                    <p>Applebttm reinforced the importance of iterative testing—what seems obvious to a designer may be confusing to users. I learned how critical it is to balance engagement with clarity, especially in socially driven platforms. The project also gave me hands-on experience with prototyping in Figma and running usability tests that directly informed design decisions.</p>
+                </article>
+
+                <div class="article-chunk2">
+                    <img src="images/applebttm/header.webp" alt="" class="article-img">
+                    <a href="">
+                        <div class="button icon">
+                            <p>View full prototype</p>
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </div>
+                    </a>
+                </div>
+
+
+                
+            </div>
+        </div>
+
+
+    </div>
+
+    <div class="footer">
+        <p class="label">Like what you see?</p>
+        <p class="landing-script">Let's Connect!</p>
+        <div class="buttons">
+            <div class="button" style="position: relative;">
+                <i class="fa-brands fa-linkedin fa-xl" style="color: #95FF00;"></i>
+            </div>
+            <div class="button" style="position: relative;">
+                <i class="fa-solid fa-envelope fa-xl" style="color: #95FF00;"></i>
+            </div>
+            <div class="button">
+                <i class="fa-solid fa-file-lines fa-xl" style="color: #95FF00;"></i>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
