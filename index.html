@@ -35,13 +35,9 @@
 
     <div class="landing">
         <div class="hero">
-            <!-- <div class="avatarcont"> -->
                 <div class="profilepic">
 
                     <img src="profilepictureanimation/images/GabrielCropped.jpg" alt="Gabriel Figueroa" height="100%" width="100%">
-                    <!-- <div class="emoji-animator" id="film-animator">
-                        <div class="emoji" id="film"><p>🎞️</p></div>
-                    </div> -->
                     
                     <div class="emoji glass-smaller avocado"><p>🥑</p></div>
                     <div class="emoji glass-smaller film"><p>🎞️</p></div>
@@ -55,7 +51,6 @@
                     <div class="emoji glass-smaller heart"><p>❤️‍🔥</p></div>
                     <div class="emoji glass-smaller computer"><p>👨‍💻</p></div>
                 </div>
-            <!-- </div> -->
 
             <script>
                 let hoverElement = document.querySelector(".profilepic");
@@ -65,7 +60,7 @@
                     return new Promise(resolve => setTimeout(resolve, ms));
                 }
 
-                console.log(hoverElement, emojis);
+                /* console.log(hoverElement, emojis);
 
                 async function showHide(){
                     console.log("event triggered");
@@ -87,9 +82,21 @@
                         console.log('slept for 100ms')
                         
                     }
+                } */
+                
+                async function animateEmojis() {
+                    console.log('animating emojis'),
+                    hoverElement.classList.add("active");
+                    for(let i = 0; i < emojis.length; i++){
+                        emojis[i].classList.add("show");
+                        console.log(`emoji ${i}: added show class`);
+                        await sleep(100);
+                        console.log('slept for 100ms');
+                    }
+                    
                 }
 
-                setTimeout(showHide, 500);
+                setTimeout(animateEmojis, 500);
                 //hoverElement.addEventListener("mouseenter", showHide);
                 //hoverElement.addEventListener("mouseleave", showHide);
 
