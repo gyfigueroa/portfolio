@@ -396,14 +396,14 @@ background: linear-gradient(0deg, rgba(69, 100, 252, 1) 0%, rgba(69, 191, 252, 1
 
 .staticBG{
     background: #833AB4;
-background: linear-gradient(0deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 23%, rgba(252, 176, 69, 1) 40%, rgba(69, 100, 252, 1) 62%, rgba(69, 191, 252, 1) 82%, rgba(69, 252, 99, 1) 100%);
+    background: linear-gradient(0deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 23%, rgba(252, 176, 69, 1) 40%, rgba(69, 100, 252, 1) 62%, rgba(69, 191, 252, 1) 82%, rgba(69, 252, 99, 1) 100%);
     background-image: url(images/glass.gif);
     background-position: center;
     background-size: cover;
     width: 100vw;
-    height: 100vh;
+    height: 120vh;
     position: sticky;
     top: 0;
-    margin-bottom: -100vh;
+    margin-bottom: -120vh;
     z-index: -1;
 }
