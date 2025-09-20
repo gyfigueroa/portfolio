@@ -188,7 +188,7 @@
     border-radius: 40px;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 30px;
     padding: 40px 40px;
     color: rgba(255, 255, 255, 0.8);
     background-color: rgba(255, 255, 255, 0.3);
@@ -252,6 +252,7 @@ article{
     flex: 1;
     display: flex;
     gap: var(--mini-grid-gap);
+    flex-direction: column;
 }
 
 .mini-grid-slider-container{
@@ -362,6 +363,10 @@ article{
 
     article{
         max-width: 700px;
+    }
+
+    .mini-grid-row{
+        flex-direction: row;
     }
 }
 

@@ -75,10 +75,7 @@ body {
     transition: all 0.25s ease;
     position: relative;
     box-shadow: none;
-    backdrop-filter: blur(2px) contrast(1.5) brightness(0.8) saturate(5) url(#displacementFilterCircular);
-
-    
-    
+    backdrop-filter: blur(2px) contrast(1.5) brightness(0.8) saturate(5) url(#displacementFilterCircular);    
 }
 
 .button:hover{
@@ -205,6 +202,7 @@ h1{
     font-style: normal;
     font-weight: 800;
     letter-spacing: -1px ;
+    line-height: 105%;
 }
 
 h2 {
@@ -224,14 +222,14 @@ h3 {
     width: fit-content;
     font-weight: 600;
     line-height: normal;
-    padding: 5px 15px;
-    border-radius: 30px 5px;
+    padding: 10px 15px;
+    border-radius: 20px;
     background-color: rgba(255, 255, 255, 0.25);
 } 
 
 .highlight {
     padding: 10px 15px;
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.25);
     backdrop-filter: blur(50px) brightness(0.5);
     border-left: 10px solid rgba(255, 255, 255, 0.8);
     font-weight: 1000;

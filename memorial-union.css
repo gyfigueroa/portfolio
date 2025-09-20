@@ -103,12 +103,6 @@ article{
     border-radius: var(--ne-quote-border);
 }
 
-/* #pain-points{
-    padding: 0;
-} */
-#pain-points > .highlight {
-    background-color: rgba(255, 0, 0, 0.5);
-}
 
 
 
