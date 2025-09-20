@@ -108,6 +108,7 @@ body {
     place-items: center;
     border-radius: 100px;
     transition: all 0.5s;
+    backdrop-filter: blur(2px) contrast(1.5) brightness(0.8) saturate(5) url(#displacementFilterMenu);
 }
 
 .menu:hover{
@@ -135,6 +136,7 @@ body {
   .button{
     backdrop-filter: blur(2px) contrast(1.5) brightness(0.8) saturate(5);
   }
+  
 }
 
 .glass2 {

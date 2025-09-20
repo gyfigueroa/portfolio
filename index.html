@@ -20,16 +20,11 @@
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+    <script src="filters.js"></script>
     <script src="script.js" defer></script>
+    
 </head>
 <body>
-    <svg style="display:none;">
-        <filter id="displacementFilter">
-            <feImage href="/images/displacement.png" preserveAspectRatio="none" />
-            <feDisplacementMap in="SourceGraphic" scale="300" xChannelSelector="R" yChannelSelector="G" />
-        </filter>
-    </svg>
-
     <div class="parallaxContainer">
         <div class="staticBG"></div>
 
@@ -90,8 +85,8 @@
                     for(let i = 0; i < emojis.length; i++){
                         emojis[i].classList.add("show");
                         console.log(`emoji ${i}: added show class`);
-                        await sleep(100);
-                        console.log('slept for 100ms');
+                        await sleep(500);
+                        console.log('slept for 500ms');
                     }
                     
                 }

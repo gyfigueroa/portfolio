@@ -506,8 +506,6 @@
         left: 50%;
         scale: 0.5;
     }
-    50%{
-    }
     100%{
         opacity: 1;
         filter: blur(0px);
@@ -614,8 +612,6 @@
         left: 50%;
         scale: 0.5;
     }
-    50%{
-    }
     100%{
         opacity: 1;
         filter: blur(0px);
@@ -669,8 +665,6 @@
         left: 50%;
         scale: 0.5;
     }
-    50%{
-    }
     100%{
         opacity: 1;
         filter: blur(0px);
@@ -721,8 +715,6 @@
         top: 50%;
         left: 50%;
         scale: 0.5;
-    }
-    50%{
     }
     100%{
         opacity: 1;
