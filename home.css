@@ -197,6 +197,20 @@ body{
     opacity: 0;
 }
 
+#award{
+    position: absolute;
+    border-radius: 5px;
+    background-color: rgba(255, 217, 0, 0.5);
+    top: 10px;
+    right: 10px;
+    transform: rotate(10deg);
+    backdrop-filter: blur(2px) contrast(1.5) brightness(0.8) url(#displacementFilter);
+}
+
+#award > img {
+    height: 30px;
+}
+
 
 @media (min-width: 750px) {
   /* … */
