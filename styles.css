@@ -13,8 +13,31 @@
 }
 
 body {
-    background-color: #002C21;
+    background-color: var(--dark-green);
 }
+
+
+/* body {
+  background-color: var(--pink);
+  color: var(--blue);
+} */
+
+/* Preloader */
+#preloader {
+  background: var(--dark-green)
+    url("https://samherbert.net/svg-loaders/svg-loaders/spinning-circles.svg")
+    no-repeat center;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  display: flex;
+  position: fixed;
+  height: 100vh;
+  left: 0;
+  top: 0;
+  z-index: 9999;
+}
+
 
 .container{
     width: 100vw;
@@ -370,7 +393,7 @@ background: linear-gradient(0deg, rgba(69, 100, 252, 1) 0%, rgba(69, 191, 252, 1
 
 
 .footer{
-    background-color: #002C21;
+    background-color: var(--dark-green);
     box-sizing: content-box;
     color: var(--lime-green);
     display: flex;

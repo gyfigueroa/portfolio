@@ -185,6 +185,7 @@ body{
 }
 
 .developer{
+    visibility: hidden;
     background: #FD7608;
     /* background: radial-gradient(circle,rgba(253, 118, 8, 1) 0%, rgba(71, 36, 0, 1) 100%); */
     background: linear-gradient(rgba(71, 36, 0, 1) 0%, rgba(253, 118, 8, 1) 100%);
@@ -237,5 +238,9 @@ body{
 
   .selected-works, .column{
     gap: 30px;
+  }
+
+  .developer{
+    visibility: visible;
   }
 }
