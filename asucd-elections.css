@@ -3,8 +3,8 @@
     grid-template-areas:
     "A A A A B B"
     "C C C C C C"
-    "D D D D x x"
-    "y y y E E E"
+    "D D D D . ."
+    ". . . E E E"
     "F F F F F F";
 }
 
@@ -31,17 +31,6 @@
 
 .gallery-img:nth-of-type(6){
     grid-area: F;
-}
-#filler1{
-    grid-area: x;
-}
-
-#filler2{
-    grid-area: y;
-}
-
-#filler3{
-    grid-area: a;
 }
 
 

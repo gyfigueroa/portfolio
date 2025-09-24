@@ -9,23 +9,23 @@
     --brown: #240000;
     --orange: #FD7608;
     --dark-green:#002C21;
+    --sap-green: #36602D;
+    --sap-green-50: rgba(54, 96, 45, 0.5);
     --lime-green: #95FF00;
+    --lime-green-50: rgba(149, 255, 0, 0.5);
+
 }
 
 body {
     background-color: var(--dark-green);
-}
 
+}  
 
-/* body {
-  background-color: var(--pink);
-  color: var(--blue);
-} */
 
 /* Preloader */
 #preloader {
   background: var(--dark-green)
-    url("https://samherbert.net/svg-loaders/svg-loaders/spinning-circles.svg")
+    url("https://samherbert.net/svg-loaders/svg-loaders/circles.svg")
     no-repeat center;
   align-items: center;
   justify-content: center;
@@ -35,6 +35,7 @@ body {
   height: 100vh;
   left: 0;
   top: 0;
+  
   z-index: 9999;
 }
 
@@ -52,7 +53,7 @@ body {
 .glass {
     background: rgba(242, 242, 255, 0.412);
     background: linear-gradient(194deg,rgba(242, 242, 255, 0.4) 0%, rgba(242, 252, 255, .0) 100%);
-    backdrop-filter: blur(10px) contrast(1.5) brightness(0.8) url(#displacementFilter);
+    backdrop-filter: blur(5px) contrast(1.5) brightness(0.8) url(#displacementFilter);
     
     box-shadow: 0px 10px 40px -5px rgba(255,255,255,0.5) inset, 10px 10px 10px -6px rgba(255,255,255,0.75) inset, 1px -9px 15px 8px rgba(0,0,0,0.1) inset, -9px -10px 9px -8px rgba(0,0,0,0.4) inset;
     
@@ -82,16 +83,13 @@ body {
     transform: scale(1.2);
 }
 
-/* .emoji.glass {
-    backdrop-filter: blur(2px) contrast(1.5) brightness(0.8) saturate(5) url(#displacementFilterCircular);
-} */
 
 
 .button {
     width: 60px;
     height: 60px;
     border-radius: 20px;
-    background: #36602D;
+    background: var(--sap-green);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -102,7 +100,7 @@ body {
 }
 
 .button:hover{
-    background: rgba(149, 255, 0, 0.5); 
+    background: var(--lime-green-50); 
     transform: scale(1.2);
     box-shadow: 0px 10px 20px -7px rgba(255,255,255,0.5) inset, 10px 10px 1px -13px rgba(255,255,255,0.5) inset, 1px -9px 10px -5px rgba(0,0,0,0.1) inset, -9px -10px 4px -11px rgba(0,0,0,0.4) inset;
 
@@ -142,7 +140,7 @@ body {
 
 @supports (hanging-punctuation: first) and (font: -apple-system-body) and (-webkit-appearance: none) {
   .glass {
-    backdrop-filter: blur(10px) contrast(1.5) brightness(0.9);
+    backdrop-filter: blur(5px) contrast(1.5) brightness(0.9);
   }
 
   .glass-smaller{
@@ -257,8 +255,6 @@ h3 {
     border-left: 10px solid rgba(255, 255, 255, 0.8);
     font-weight: 1000;
     font-size: 16pt;
-/*     box-shadow: 0px 10px 20px -7px rgba(255,255,255,0.5) inset, 10px 10px 1px -13px rgba(255,255,255,0.5) inset, 1px -9px 10px -5px rgba(0,0,0,0.1) inset, -9px -10px 4px -11px rgba(0,0,0,0.4) inset;
- */
     width: fit-content;
     border-radius: 10px;
 }
@@ -338,8 +334,7 @@ background: linear-gradient(0deg, rgba(69, 100, 252, 1) 0%, rgba(69, 191, 252, 1
 
 
 .folder:hover::after{
-  transform: skewX(-10deg);/* 
-  box-shadow: 0 18px 40px rgba(0,0,0,.18); */
+  transform: skewX(-10deg);
   box-shadow: 0px 10px 20px -7px rgba(255,255,255,0.5) inset, 10px 10px 1px -13px rgba(255,255,255,0.5) inset, 1px -9px 10px -5px rgba(0,0,0,0.1) inset, -9px -10px 4px -11px rgba(0,0,0,0.4) inset, -1px 26px 39px -11px rgba(255,255,255,0.54) inset;
 }
 

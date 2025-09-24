@@ -56,30 +56,6 @@
                 function sleep(ms) {
                     return new Promise(resolve => setTimeout(resolve, ms));
                 }
-
-                /* console.log(hoverElement, emojis);
-
-                async function showHide(){
-                    console.log("event triggered");
-                    hoverElement.classList.add("active");
-
-                    for (let i = 0; i < emojis.length; i++){
-                        if (emojis[i].classList[2] === "show"){
-                            emojis[i].classList.remove("show");
-                            emojis[i].classList.add("hide");
-                            //console.log(emojis[i]);
-                            console.log(`emoji ${i}: show -> hide`);
-                        } else {
-                            emojis[i].classList.remove("hide");
-                            emojis[i].classList.add("show");
-                            console.log(`emoji ${i}: hide -> show`);
-                        }
-
-                        await sleep(100);
-                        console.log('slept for 100ms')
-                        
-                    }
-                } */
                 
                 async function animateEmojis() {
                     console.log('animating emojis'),
@@ -94,9 +70,6 @@
                 }
 
                 setTimeout(animateEmojis, 500);
-                //hoverElement.addEventListener("mouseenter", showHide);
-                //hoverElement.addEventListener("mouseleave", showHide);
-
 
             </script>
         </div>
@@ -120,7 +93,7 @@
                         </div>
                     </A>
                     <!-- RESUME -->
-                    <a href="" target="_blank">
+                    <a href="resume.pdf" target="_blank">
                         <div class="button">
                             <i class="fa-solid fa-file-lines fa-xl" style="color: #95FF00;"></i>
                         </div>
@@ -183,7 +156,7 @@
         <div class="column">
             <a href="asucd.html">
                 <div class="polaroid gallery-hover">
-                    <div class="polaroid-img" style="background-image: url('images/asucd-hero-image.svg');">
+                    <div class="polaroid-img" style="background-image: url('images/asucd/asucd-hero-image.svg');">
                         <div class="developer"></div>
                     </div>
                     
@@ -240,7 +213,7 @@
 
             <a href="nu-alpha-kappa.html">
                 <div class="polaroid gallery-hover">
-                <div class="polaroid-img" style="background-image: url('images/nak/NAK_heroimage.png');">
+                <div class="polaroid-img" style="background-image: url('images/nak/NAK-hero.svg');">
                     <div class="developer"></div>
                 </div>
                 <p class="project-title">Nu Alpha Kappa Fraternity Inc.</p>
@@ -281,7 +254,6 @@
                 </div>
             </a>
             
-
             <!-- <div class="folder-container gallery-hover">
                 <div class="folder">
                     <h2 class="label folder-title">Assorted Projects</h2>
@@ -313,7 +285,7 @@
                 </div>
             </A>
             <!-- RESUME -->
-            <a href="#" target="_blank">
+            <a href="resume.pdf" target="_blank">
                 <div class="button">
                     <i class="fa-solid fa-file-lines fa-xl" style="color: #95FF00;"></i>
                 </div>

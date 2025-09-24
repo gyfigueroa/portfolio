@@ -1,10 +1,10 @@
 .gallery{
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-areas:
-    "A A A x"
-    "y y B B"
+    "A A A ."
+    ". . B B"
     "C C B B"
-    "a a B B";
+    ". . B B";
 }
 
 
@@ -19,17 +19,7 @@
 .gallery-img:nth-of-type(3){
     grid-area: C;
 }
-#filler1{
-    grid-area: x;
-}
 
-#filler2{
-    grid-area: y;
-}
-
-#filler3{
-    grid-area: a;
-}
 
 
 .project-hero {

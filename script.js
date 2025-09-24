@@ -1,4 +1,6 @@
 (function(){
+    
+
     console.log('script running');
     gsap.registerPlugin(ScrollTrigger);
 
@@ -16,6 +18,8 @@
     (function fade() {
         (s.opacity -= 0.1) < 0 ? (s.display = "none") : setTimeout(fade, 40);
     })();
+
+    
 
     let developers = document.querySelectorAll('.developer');
 

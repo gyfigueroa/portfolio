@@ -1,11 +1,11 @@
 .gallery{
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-areas:
-    "A A A x"
+    "A A A ."
     "B B C C"
-    "y D D D"
+    ". D D D"
     "E E F F"
-    "G G G z";
+    "G G G .";
 }
 
 
@@ -37,18 +37,6 @@
     grid-area: G;
 }
 
-
-#filler1{
-    grid-area: x;
-}
-
-#filler2{
-    grid-area: y;
-}
-
-#filler3{
-    grid-area: z;
-}
 
 
 .project-hero {
