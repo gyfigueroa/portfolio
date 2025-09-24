@@ -48,30 +48,6 @@
                     <div class="emoji glass-smaller heart"><p>❤️‍🔥</p></div>
                     <div class="emoji glass-smaller computer"><p>👨‍💻</p></div>
                 </div>
-
-            <script>
-                let hoverElement = document.querySelector(".profilepic");
-                let emojis = document.querySelectorAll(".emoji");
-
-                function sleep(ms) {
-                    return new Promise(resolve => setTimeout(resolve, ms));
-                }
-                
-                async function animateEmojis() {
-                    console.log('animating emojis'),
-                    hoverElement.classList.add("active");
-                    for(let i = 0; i < emojis.length; i++){
-                        emojis[i].classList.add("show");
-                        console.log(`emoji ${i}: added show class`);
-                        await sleep(250);
-                        console.log('slept for 250ms');
-                    }
-                    
-                }
-
-                setTimeout(animateEmojis, 500);
-
-            </script>
         </div>
 
 

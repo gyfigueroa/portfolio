@@ -12,7 +12,7 @@
         loader.style.display = "none";
     });
 
-    //Fade out, optional
+    //Fade out
     var s = document.getElementById("preloader").style;
     s.opacity = 1;
     (function fade() {
@@ -35,6 +35,28 @@
             }
         })
     })
+
+    // EMOJI ANIMATION
+    let hoverElement = document.querySelector(".profilepic");
+    let emojis = document.querySelectorAll(".emoji");
+
+    function sleep(ms) {
+        return new Promise(resolve => setTimeout(resolve, ms));
+    }
+    
+    async function animateEmojis() {
+        console.log('animating emojis'),
+        hoverElement.classList.add("active");
+        for(let i = 0; i < emojis.length; i++){
+            emojis[i].classList.add("show");
+            console.log(`emoji ${i}: added show class`);
+            await sleep(250);
+            console.log('slept for 250ms');
+        }
+        
+    }
+
+    setTimeout(animateEmojis, 500);
 
 
 })();
