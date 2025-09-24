@@ -1,7 +1,8 @@
 .gallery{
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
     grid-template-areas:
-    "A A A B B B B";
+    "B"
+    "A";
 }
 
 
@@ -13,20 +14,6 @@
     grid-area: B;
 }
 
-.gallery-img:nth-of-type(3){
-    grid-area: C;
-}
-#filler1{
-    grid-area: x;
-}
-
-#filler2{
-    grid-area: y;
-}
-
-#filler3{
-    grid-area: a;
-}
 
 
 .project-hero {
@@ -38,5 +25,10 @@
   /* … */
     .project-hero {
         background-image: url(images/la-gran-tardeada/cover.svg);
+    }
+    .gallery{
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+        "A A A B B B B";
     }
 }
