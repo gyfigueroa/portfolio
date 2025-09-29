@@ -13,6 +13,10 @@ document.addEventListener("DOMContentLoaded", function() {
         <feImage href="images/displacement-menu.png" preserveAspectRatio="none" />
         <feDisplacementMap in="SourceGraphic" scale="300" xChannelSelector="R" yChannelSelector="G" />
       </filter>
+      <filter id="displacementFilterLarge">
+        <feImage href="images/displacement-large.png" preserveAspectRatio="none" />
+        <feDisplacementMap in="SourceGraphic" scale="300" xChannelSelector="R" yChannelSelector="G" />
+      </filter>
     </svg>
   `;
 

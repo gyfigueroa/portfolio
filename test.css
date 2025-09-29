@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(images/lines.png);
+    background-image: url(images/horizontal-film-dithered.gif);
+    background-color: white;
+}
+
+main {
+    display: flex;
+    gap: 10px;
+    height: 100vh;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+div{
+    width: 20vw;
+    height: 40vh;
+    background-color: aliceblue;
+    border-radius: 20px;
+}
+
+.glass{
+    background-color: rgba(255, 255, 255, 0.25);
+    box-shadow: 5px 5px 5px -5px rgba(255,255,255,0.8) inset, -5px -5px 15px -10px rgba(255,255,255,0.8) inset;
+    backdrop-filter: blur(5px) contrast(1.5) brightness(0.9) url(#displacementFilter);
+    border: 1px rgba(0, 0, 0, 0.1) solid;
+}
+
+.glass.fogged{
+    backdrop-filter: blur(20px) brightness(0.8) url(#displacementFilter);
+}
+
+.glass.large{
+    backdrop-filter: blur(5px) contrast(1.5) brightness(0.9) url(#displacementFilter);
+}
+
+.glass.circular{
+    backdrop-filter: blur(5px) contrast(1.5) brightness(0.9) url(#displacementFilterCircular);
+    border-radius: 50%;
+}
+
+.glass.menu{
+    backdrop-filter: blur(5px) contrast(1.5) brightness(0.9) url(#displacementFilterMenu);
+
+}
+
+@supports (hanging-punctuation: first) and (font: -apple-system-body) and (-webkit-appearance: none) {
+  .glass, .glass.large, .glass.circular, .glass.menu  {
+    backdrop-filter: blur(5px) contrast(1.5) brightness(0.9);
+  }
+  .glass.fogged{
+    backdrop-filter: blur(20px) brightness(0.8);
+  }
+}
