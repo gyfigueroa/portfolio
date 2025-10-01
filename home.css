@@ -11,7 +11,7 @@
 
 .hero {
     flex: 1;
-    background-image: url("images/horizontal-film-dithered.gif");
+    /* background-image: url("images/horizontal-film-dithered.gif"); */
     background-color: var(--lime-green);
     background-size: cover;
     background-position: center;

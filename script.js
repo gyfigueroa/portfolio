@@ -59,10 +59,10 @@
     var s = document.getElementById("preloader").style;
     s.opacity = 1;
     (function fade() {
-        (s.opacity -= 0.1) < 0 ? (s.display = "none") : setTimeout(fade, 40);
+        (s.opacity -= 0.1) < 0 ? (s.display = "none", console.log("faded out")) : setTimeout(fade, 40);
     })();
 
-    console.log("faded loader")
+    
 
 
 })();
