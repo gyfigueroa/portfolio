@@ -34,32 +34,32 @@
     }
     
     async function animateEmojis() {
-        console.log('animating emojis'),
+        //console.log('animating emojis'),
         hoverElement.classList.add("active");
         for(let i = 0; i < emojis.length; i++){
             emojis[i].classList.add("show");
-            console.log(`emoji ${i}: added show class`);
+            //console.log(`emoji ${i}: added show class`);
             await sleep(250);
-            console.log('slept for 250ms');
+            //console.log('slept for 250ms');
         }
         
     }
 
     setTimeout(animateEmojis, 500);
 
-    console.log('script completed');
+    //console.log('script completed');
 
     var loader = document.getElementById("preloader");
     window.addEventListener("load", function () {
         loader.style.display = "none";
-        console.log('loaded screen, fading out loader')
+        //console.log('loaded screen, fading out loader')
     });
 
     //Fade out
     var s = document.getElementById("preloader").style;
     s.opacity = 1;
     (function fade() {
-        (s.opacity -= 0.1) < 0 ? (s.display = "none", console.log("faded out")) : setTimeout(fade, 40);
+        (s.opacity -= 0.1) < 0 ? (s.display = "none"/* , console.log("faded out") */) : setTimeout(fade, 40);
     })();
 
     
