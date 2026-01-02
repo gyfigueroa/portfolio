@@ -18,11 +18,10 @@
 
 body {
     background-color: var(--dark-green);
-
 }  
 
+/* 
 
-/* Preloader */
 #preloader {
   background: var(--dark-green)
     url("https://samherbert.net/svg-loaders/svg-loaders/circles.svg")
@@ -37,9 +36,43 @@ body {
   top: 0;
   
   z-index: 9999;
+} */
+
+
+.redirect-overlay{
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--dark-green);
+    backdrop-filter: blur(200px);
+    display: flex;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    color: var(--lime-green);
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
 }
 
+.redirect-overlay > p{
+    max-width: 500px;
+    line-height: 1.5em;
+    font-family: monospace;
+}
 
+.portfolio-button{
+    padding: 4px 8px;
+    background-color: var(--sap-green);
+    border-radius: 4px;
+    text-decoration: underline;
+    transition: background-color 0.25s;
+    font-family: monospace;
+    font-weight: bolder;
+}
+
+.portfolio-button:hover{
+    background-color: var(--lime-green-50);
+}
 .container{
     width: 100vw;
     height: 100vh;
